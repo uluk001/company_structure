@@ -1,0 +1,13 @@
+{% for department in departments %}
+    <li class="department-item">
+        <button class="btn btn-sm btn-outline-primary department-toggle">
+            <i class="fas fa-plus toggle-icon"></i> {{ department.name }}
+        </button>
+        <ul class="department-list" style="display: none;">
+            {% for employee in department.employees.all %}
+                <li class="employee-item">{{ employee.full_name }} - {{ employee.position }} ({{ employee.hire_date }})</li>
+            {% endfor %}
+            {% include 'departments/subtree.html' with departments=department.children.all %}
+        </ul>
+    </li>
+{% endfor %}

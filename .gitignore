@@ -1,0 +1,60 @@
+# Django #
+##########
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+mediafolder
+
+# Backup files #
+################
+*.bak
+
+# If using PyCharm #
+#####################
+.idea/
+
+# If using macOS #
+##################
+.DS_Store
+
+# If using Python environments #
+################################
+venv/
+.venv
+*.pyo
+*.pyd
+*.so
+*.egg
+dist/
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# If using Jupyter Notebook #
+#############################
+.ipynb_checkpoints
+
+# If using Visual Studio Code #
+##############################
+.vscode/
+
+# Environment variables #
+.env
+
+# Poetry #
+.poetry/
+poetry.lock
